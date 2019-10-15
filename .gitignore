@@ -1,4 +1,4 @@
 tea-web
 ./admin/node_modules
-./server/public
+./server/public/
 ./web/node_modules

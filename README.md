@@ -60,6 +60,22 @@ web:前端網頁設計 (Vue create web)
 ### 1.加入router
 ```
   1.vue add router
+  2.將App.vue 改成只有routerView
+  3.創建Main資料夾 和Main.vue
+    資料夾主要放會在Main 出現的view
+    Main.vue放header && routerView && footer
+  4.如果將Home 和 about 放入main 要改一下router
+    和他們本身的路徑
+  5.在router.js 創建Main component 
+  6.加入所需要的children路徑
+```
+### 1.創建基礎介面
+```
+  1.創建main 的children vue檔案
+  2.創建header 和 footer
+  3.將header和footer加入main
+  4.在header裡面加入所需nav (routerLink)
+  5.在footer 加入一些字
 ```
 ### 2.創建responsity
 ```
@@ -105,6 +121,7 @@ web:前端網頁設計 (Vue create web)
   全部的元素(*)
     1 .加個border-box
     2. 高亮消失(outline)
+    3. margin && padding 0
 
   html 定義
     1.找尋出現次數最多的字體大小(font-size)
@@ -118,6 +135,8 @@ web:前端網頁設計 (Vue create web)
   a 定義
     1.更改默認顏色
     2.text-decoration: none (看情況)
+    3.cursor: pointer;(看情況)
+    4.transition:  all .4s ease;
 
   li 定義
     1.取消默認點點
@@ -174,19 +193,9 @@ web:前端網頁設計 (Vue create web)
     <link rel ="shortcut icon" type="image/x-icon" href="./self-logo.png">
 ```
 
-### 2.設定router
+### 4.製作header(這邊只做routerlink介紹)
 ```
-  1.將app.vue 改成 只有 <router-view/>
-  2.創立main.vue (包含 header && routerView && footer)
-    header && footer 正常是不會變的
-  3.改router.js (自行查看)
-    主要將main 加入並添加children 
-    之後視情況加入其他path
-```
-
-### 3.製作header(這邊只做routerlink介紹)
-```
-  1.先入所需要的view(在view資料夾裡)
+  1.先加入所需要的view(在view資料夾裡)
   2.在router.js做path添加(看要children 還是.....)
   3.在header 裡添加router-link
   4.用to="/" 之類的去更換router-view

@@ -1,0 +1,67 @@
+// ----------------flex-----------------
+$flex-jc: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around,
+);
+
+$flex-ai: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    stretch: stretch,
+);
+
+// ------------------spacing-------------------
+$spacing-types: (m :margin, p: padding);
+$spacing-direction: (t: top,r: right, b: bottom, l: left);
+$spacing-base-size: 1rem;
+$spacing-sizes: (
+    0:0,
+    1:0.05,
+    2:0.25,
+    3:0.5,
+    4:1,
+    5:1.5,
+    6:2,
+    7:2.5,
+    8:3,
+    9:4,
+    10:5,
+    11:6,
+);
+
+// ------------colors---------------
+$colors: (
+    primary: #a9997f,
+    "yellow": #c09552,
+    "red":#af0d12,
+    "green": rgba(13, 4, 9, 0.8),
+    "black": #000,
+    "black-1": #140200,
+    "black-2": rgba(13, 4, 9, 0.5),
+    "grey": #444,
+    "grey-1": #666,
+    "grey-2": #797979,
+    "grey-3": #cdcdcd,
+    "white":  #fff,
+    "none":  #00000000,
+);
+
+// ------------font-size-------------
+$base-font-size: 1rem;
+$font-sizes: (
+    xxs: 0.8, //12px
+    xs: 0.8667, //13px
+    s: 0.9333, //14px
+    md: 1, //15px
+    lgs: 1.2, //18px
+    lg: 1.4, //21px
+    lgx: 1.6, //24px
+    xl: 1.8, //27px
+    xxl: 2.4, //36px
+    xxxl: 2.8, //42px
+    xxxxl: 4.3333, //65px
+);

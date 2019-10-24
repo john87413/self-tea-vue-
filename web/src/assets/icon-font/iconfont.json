@@ -1,0 +1,86 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2044555",
+      "name": "social-line--a",
+      "font_class": "line",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "2074202",
+      "name": "twiiter",
+      "font_class": "twiiterico",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "2244793",
+      "name": "fb",
+      "font_class": "fb",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "2326762",
+      "name": "Google",
+      "font_class": "Google",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "2836498",
+      "name": "IG",
+      "font_class": "IG",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "3174328",
+      "name": "line",
+      "font_class": "line_me",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "3721500",
+      "name": "menu",
+      "font_class": "menu",
+      "unicode": "e715",
+      "unicode_decimal": 59157
+    },
+    {
+      "icon_id": "5634747",
+      "name": "line",
+      "font_class": "line1",
+      "unicode": "f1e6",
+      "unicode_decimal": 61926
+    },
+    {
+      "icon_id": "8335311",
+      "name": "mail, envelope, letter, email, newsletter",
+      "font_class": "mailenvelopeletteremailnewsletter",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "9515016",
+      "name": "home",
+      "font_class": "xuanzhongshangcheng",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "10236327",
+      "name": "fb",
+      "font_class": "ios-morse-facebook",
+      "unicode": "e537",
+      "unicode_decimal": 58679
+    }
+  ]
+}

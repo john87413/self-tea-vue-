@@ -16,11 +16,11 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/main',
       // name: 'home',
       component: Main,
       children: [
-        {path: '/', component: Home},
+        {path: '/main', component: Home},
         {path: '/main/news', component: News},
         {path: '/main/about', component: About},
         {path: '/main/menu', component: Menu},
@@ -29,6 +29,10 @@ export default new Router({
         {path: '/main/join', component: Join},
         {path: '/main/careers', component: Careers},
       ],
+    },
+    {
+      path: '*', 
+      redirect: '/main'
     },
     // {
     //   path: '/about',

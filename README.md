@@ -69,7 +69,7 @@ web:前端網頁設計 (Vue create web)
   5.在router.js 創建Main component 
   6.加入所需要的children路徑
 ```
-### 1.創建基礎介面
+### 2.創建基礎介面
 ```
   1.創建main 的children vue檔案
   2.創建header 和 footer
@@ -77,12 +77,12 @@ web:前端網頁設計 (Vue create web)
   4.在header裡面加入所需nav (routerLink)
   5.在footer 加入一些字
 ```
-### 2.創建responsity
+### 3.創建responsity
 ```
   1.用gitKraken 或是 直接重gitHub 上創建
   2.設定GitHub page (很重要!!!!!)
 ```
-### 3.build 專案
+### 4.build 專案
 ```
   1.建立vue.config.js
     const path = require('path');
@@ -128,8 +128,9 @@ web:前端網頁設計 (Vue create web)
   
   body 定義
     1.設margin 0
-    2.設置行高
+    2.設置行高(不確定)
     3.設置常用字體
+      如果要用中文 必須使用\5FAE\8EDF\6B63\9ED1\9AD4(像這樣)
     4.可以順便設置background (看設計)
 
   a 定義
@@ -150,7 +151,7 @@ web:前端網頁設計 (Vue create web)
 
 ### 3.定義常用flex工具
 ```
-  1.定義 display
+  1.定義display
   2.定義direction
   3.定義flex-grow
   4.定義出變量 jc && ai
@@ -200,17 +201,50 @@ web:前端網頁設計 (Vue create web)
   3.在header 裡添加router-link
   4.用to="/" 之類的去更換router-view
   5.可以把title 和 menu 分開(程式碼優化)
+  6.Logo.vue
+    用routerLink(a) 時 外圍一定要包d-flex不然不能條大小 (不知為啥)
+  7.SmallMenu.vue
+    如果用height 設置auto 比較不會抖動(可能是fixed 的關係)
+    a.small-menu-button(小技巧)
+    a.small-menu-button.show(小技巧)
+  8.MainHeader.vue
+    監聽滾動 --> window.addEventListener("scroll", this.scrollListen);
+  9.Contact.vue
+    z-index 用法小技巧 看一下IG按鈕
 ```
 
-### 4.製作home的swiper
+### 4.製作home的 welcome
 ```
-  1.npm install vue-awesome-swiper --save
-  2.import VueAwesomeSwiper from 'vue-awesome-swiper'
+  1.外圍容器建議設置 height: XXrem;
+    如果設置100vh 會造成absolute的東西超出範圍 或是 在定位上的錯位
+    (參考welcome-container)
+  2.absolute 有時可以設置%數 比較好用
+  3.position 一開始是 static
+```
+
+### 4.製作home的 ads
+```
+  1.Aditem.vue
+    如過需要布局自動換行 可以設定width 100%
+    再設置一些margin or padding(參考ad-container)
+  2.Adintro.vue
+    如果不希望它超出容器範圍 要設置overflow: hidden
+    在最外圍的影響容器(參考home-ad-intro)
+  3.Adintro.vue
+    z-index 用法技巧
+    看一下按鈕部分
+  4.AdSwiper.vue
+    介紹swiper 使用
+    npm install vue-awesome-swiper --save
+    import VueAwesomeSwiper from 'vue-awesome-swiper'
     import 'swiper/dist/css/swiper.css'
     Vue.use(VueAwesomeSwiper, /* { default global options } */)
-  3.使用
-  4.可以把swiper 和 menu 分開(程式碼優化)
+  5.AdSwiper.vue
+    vue-awesome-swiper 注意事項
+    最外層容器 不要用d-flex!!!! 不然會沒辦法用(超出去)
+    如果想要更換點點顏色 style不要用scoped !!!!
 ```
+
 ## END
 ---
 ## router小重點
@@ -250,4 +284,20 @@ web:前端網頁設計 (Vue create web)
   2. 可能會多出一個空白
   結論:
   1. 盡量別在手機端用fixed
+```
+
+### 程式碼小重點
+```
+  1. class bind
+    :class="{ show: isShow }"
+  2. 簡寫 if else
+    isShow=(isShow === false)?true:false;
+  3. JS 監聽滾動
+    window.addEventListener("scroll", this.scrollListen);
+  4. JS 監聽放大縮小
+    window.addEventListener("resize", this.setOpenLeft);
+  5. JS 拿到滾動Top
+    document.documentElement.scrollTop 
+  6. class name 注意"ad"
+    如果寫一寫發現突然display: none 可以換一下class Name
 ```

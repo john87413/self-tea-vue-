@@ -18,7 +18,8 @@ git push -u origin master
 ---
 ## step2 create item
 ### 1.create three folder
-#### admin:後台管理 (Vue create admin)
+```
+admin:後台管理 (Vue create admin)
   用途:管理資料庫的資料，新增改查等等
   前置作業:
   1. npm install -g @vue/cli (已安裝過就不用)
@@ -30,7 +31,7 @@ git push -u origin master
          Vue.use(element);
   4. vue add router
 
-#### server:前後端串聯 (mkdir server)
+server:前後端串聯 (mkdir server)
   用途:包含所有node.js，提供給admin && web 的所有接口
   前置作業:
     1. mkdir server
@@ -46,7 +47,7 @@ web:前端網頁設計 (Vue create web)
   前置作業:
   1. npm install -g @vue/cli (已安裝過就不用)
   2. Vue create web
-
+```
 
 ### 2.gitignore
 ```

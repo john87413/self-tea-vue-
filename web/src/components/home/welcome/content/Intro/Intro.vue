@@ -19,7 +19,7 @@ export default {
         introTitle: { titleTime: "創立於乙酉年" },
         introText: {
           text:
-            "三十年茶湯硬底子，品選茶葉真功夫。<br />堅持以茶會友的初衷，為您真心做到最好。<br />提供最用心的幸福好茶，感受每一杯的人情滋味。"
+            "三十年茶湯硬底子，品選茶葉真功夫。<br>堅持以茶會友的初衷，為您真心做到最好。<br>提供最用心的幸福好茶，感受每一杯的人情滋味。"
         },
         introLanguage: {
           languageTitle: "LANGUAGE",
@@ -61,7 +61,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../../../../assets/scss/_variable.scss";
-// intro容器 (設置 % 才可以變小)
+// intro容器 (設置 % 寬度才可以縮小 產生被遮住效果)
 .welcome-intro {
   position: relative;
   overflow: hidden;
@@ -70,13 +70,11 @@ export default {
 @media all and (max-width: 980px) {
   .welcome-intro {
     width: 100%;
-    position: relative;
   }
 }
 @media all and (max-width: 480px) {
   .welcome-intro {
     width: 100%;
-    position: relative;
   }
 }
 </style>

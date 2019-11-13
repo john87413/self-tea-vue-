@@ -1,7 +1,7 @@
 <template>
   <div class="ad-swiper-container px-8">
     <!-- swiper 外圍容器 -->
-    <swiper class="ad-swiper" :options="swiperOption">
+    <swiper class="ad-swiper-content" :options="swiperOption">
       <!-- swiper slide 容器 -->
       <swiper-slide
         class="ad-swiper-item d-flex mx-2 py-8"
@@ -52,7 +52,7 @@ export default {
 @import "../../../../assets//scss/_variable";
 .ad-swiper-container {
   display: none;
-  .ad-swiper {
+  .ad-swiper-content {
     // 底部三個點點 容器
     .pagination-ad {
       bottom: 10px;
@@ -61,18 +61,18 @@ export default {
         width: 0.6rem;
         height: 0.6rem;
         margin: 0 0.625rem !important;
-        background: #303036 !important;
+        background: map-get($colors, "primary") !important;
         opacity: 1;
         transform: translate(0px, 0px) scale(1);
         transition: all 0.3s;
         &:hover {
-          background: map-get($colors, "primary") !important;
+          background: map-get($colors, "black-4") !important;
         }
       }
       // 底部點點被按下後
       .swiper-pagination-bullet-active {
         transform: translate(0px, 0px) scale(1.3);
-        background: map-get($colors, "primary") !important;
+        background: map-get($colors, "black-4") !important;
         transition: all 0.3s;
       }
     }
@@ -86,7 +86,7 @@ export default {
 }
 @media all and (max-width: 590px) {
   .ad-swiper-container {
-    .ad-swiper {
+    .ad-swiper-content {
       // 變成垂直
       .ad-swiper-item {
         flex-direction: column;

@@ -16,6 +16,7 @@ html {
 
 body{
     margin: 0;
+    overflow-y: scroll;
     // Times New Roman && 微軟正黑體 為內建
     font-family: "cwTeXFangSong", "Raleway", "Times New Roman", sans-serif, \5FAE\8EDF\6B63\9ED1\9AD4, Heiti TC;
 }
@@ -155,5 +156,16 @@ $size in $font-sizes {
 @each $var in (left, center, right) {
     .text-#{$var} {
         text-align: $var;
+    }
+}
+
+// ------動畫區------
+// explore 茶的流動 動畫
+@keyframes sprite{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -2904px;
     }
 }

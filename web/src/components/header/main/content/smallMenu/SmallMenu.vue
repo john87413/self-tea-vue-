@@ -66,7 +66,8 @@ export default {
     }
   }
 }
-// 選單按下去時
+// 選單按下去時(因為底下有 span 所以得要用a.small-menu-button.show 
+//             他才會知道span 是哪裡的 span)
 a.small-menu-button.show {
   // 中間變透明
   span {

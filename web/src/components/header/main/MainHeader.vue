@@ -36,7 +36,7 @@ export default {
     window.addEventListener("scroll", this.scrollListen); // 監聽滾動
   },
   methods: {
-    // 監聽滾動 滾動大於5出現選單
+    // 監聽滾動 滾動大於5出現選單 window.pageYOffset 手機電腦都通用
     scrollListen(){
       this.showHeader=(window.pageYOffset > 5)?true:false;
     }

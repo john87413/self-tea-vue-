@@ -1,7 +1,7 @@
 <template>
-  <div class="head-tool w-100">
+  <div class="head-tool">
     <!-- w-100 才可以對齊右邊 -->
-    <div class="menu-tool d-flex jc-end w-100">
+    <div class="menu-tool d-flex jc-end ">
       <!-- 聯絡工具區 -->
       <tool-contact :contactContent="toolContent.contact"></tool-contact>
       <!-- 語言工具區 -->

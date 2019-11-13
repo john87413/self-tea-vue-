@@ -31,7 +31,7 @@ export default {
   background: url("../../../assets/images/home_ad_bg.jpg");
 }
 @media all and (max-width: 1025px) {
-  // swiper 外圍不能用flex!!!!!!!!!!!!!!!!
+  // swiper 外圍不要用flex!!!!!!!!!!!!!!!!(如果裡面沒有設置大小)
   .home-advertisement {
     display: block;
     padding: 0 0;

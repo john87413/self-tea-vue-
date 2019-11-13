@@ -84,6 +84,7 @@ export default {
     }
   }
 }
+// 到這時候要讓介紹文字占滿 所以設width 為95%
 @media all and (max-width: 1025px) {
   .home-ad-intro {
     width: 95%;
@@ -95,6 +96,7 @@ export default {
     }
   }
 }
+// 這邊是要讓按鈕跟文字有點距離
 @media all and (max-width: 590px) {
   .home-ad-intro {
     height: 13rem;

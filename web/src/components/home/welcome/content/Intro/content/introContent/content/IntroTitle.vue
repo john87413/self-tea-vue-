@@ -21,6 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 .intro-content-title {
+  // 大標題
   .title-logo {
     width: 15rem;
     .logo-link {
@@ -30,6 +31,7 @@ export default {
       height: 24rem;
     }
   }
+  // 成立時間
   .title-time {
     font-weight: normal;
     letter-spacing: 0.2rem;

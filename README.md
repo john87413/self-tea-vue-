@@ -1,5 +1,17 @@
 # self-tea 前後端全步驟 // 記得增加nodemon 的dependency
 
+### 還沒做的東西
+```
+  1.開場動畫 && 全不過渡動畫
+  2.全部的這些要加一下 
+    a title 
+    img alt
+  2.header
+    下拉menu 
+    小menu
+  3.explore 要加茶的動畫
+```
+
 ## step1 create gitHub(choose One)
 ### 1.GitKraken
 ```
@@ -194,7 +206,7 @@ web:前端網頁設計 (Vue create web)
     <link rel ="shortcut icon" type="image/x-icon" href="./self-logo.png">
 ```
 
-### 4.製作header(這邊只做routerlink介紹)
+### 2.製作header(這邊只做routerlink介紹)
 ```
   1.先加入所需要的view(在view資料夾裡)
   2.在router.js做path添加(看要children 還是.....)
@@ -209,17 +221,21 @@ web:前端網頁設計 (Vue create web)
     a.small-menu-button.show(小技巧)
   8.MainHeader.vue
     監聽滾動 --> window.addEventListener("scroll", this.scrollListen);
+    window.pageYOffset 手機電腦都通用
   9.Contact.vue
     z-index 用法小技巧 看一下IG按鈕
 ```
 
-### 4.製作home的 welcome
+### 3.製作home的 welcome
 ```
-  1.外圍容器建議設置 height: XXrem;
+  1.Welcome.vue
+    外圍容器建議設置 height: XXrem;
     如果設置100vh 會造成absolute的東西超出範圍 或是 在定位上的錯位
     (參考welcome-container)
-  2.absolute 有時可以設置%數 比較好用
-  3.position 一開始是 static
+  2.IntroContent.vue
+    absolute 有時可以設置%數 比較好用
+  3.TopDecorate.vue
+    position 一開始是 static
 ```
 
 ### 4.製作home的 ads
@@ -228,7 +244,7 @@ web:前端網頁設計 (Vue create web)
     如過需要布局自動換行 可以設定width 100%
     再設置一些margin or padding(參考ad-container)
   2.Adintro.vue
-    如果不希望它超出容器範圍 要設置overflow: hidden
+    如果不希望它超出容器範圍或是刪除線效果 要設置overflow: hidden
     在最外圍的影響容器(參考home-ad-intro)
   3.Adintro.vue
     z-index 用法技巧
@@ -241,8 +257,43 @@ web:前端網頁設計 (Vue create web)
     Vue.use(VueAwesomeSwiper, /* { default global options } */)
   5.AdSwiper.vue
     vue-awesome-swiper 注意事項
-    最外層容器 不要用d-flex!!!! 不然會沒辦法用(超出去)
+    最外層容器 如果要用d-flex!!!! 就要設置寬度不然會超出去
     如果想要更換點點顏色 style不要用scoped !!!!
+```
+
+### 4.製作home的 meet
+```
+  1.Meet.vue
+    大容器設置overflow :hidden 讓圖片可以超出去
+  2.MeetText.vue
+    容器設置寬度或是auto (依畫面美觀)
+  3.MeetImg.vue
+    設置絕對位置 並設置寬度
+    如果想要不會抖動 可以一直調整寬度不用百分比
+```
+
+### 5.製作home的 explore
+```
+  1.ExploreSwiper.vue
+    swiper 外圍可以設d-flex 只是要設置寬度和高度
+  2.ExploreSwiper.vue
+    想要動態更改swiperOption 裡面的值 要加這兩行
+      observer: true, 
+      observeParents: true
+    之後可以這樣取得裡面的值做更改
+      let swiper = this.$refs.list.swiper;
+      swiper.params.slidesPerView = 1;
+```
+
+### 6.製作home的 share
+```
+  1.ShareText.vue
+    如果設置width: 40rem 也設置 flex-1 
+    就會變成從設置的40rem 開始放大
+  2.ShareTitle.vue
+    設置white-space: nowrap 可以讓他不被擠壓換行
+  3.ShareSwiper.vue
+    手機端height: auto 失效(不知為啥) 可以改%數
 ```
 
 ## END

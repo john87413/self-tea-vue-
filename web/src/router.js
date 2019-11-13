@@ -14,11 +14,13 @@ import Careers from './views/main/Careers.vue'
 Vue.use(Router)
 
 export default new Router({
+  // App.vue 的 route
   routes: [
     {
       path: '/main',
       // name: 'home',
       component: Main,
+      // Main.vue 底下的 routerview
       children: [
         {path: '/main', component: Home},
         {path: '/main/news', component: News},
@@ -30,6 +32,7 @@ export default new Router({
         {path: '/main/careers', component: Careers},
       ],
     },
+    // 一開始或是不知道是哪個連結的都導入首頁 /main
     {
       path: '*', 
       redirect: '/main'

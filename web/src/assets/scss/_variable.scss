@@ -37,6 +37,7 @@ $spacing-sizes: (
 $colors: (
     primary: #a9997f,
     "yellow": #c09552,
+    "yellow-1":#8a7e6d,
     "red":#af0d12,
     "red-1": #e60012,
     "green": rgba(13, 4, 9, 0.8),
@@ -44,11 +45,13 @@ $colors: (
     "black-1": #140200,
     "black-2": rgba(13, 4, 9, 0.5),
     "black-3": #222,
+    "black-4": #303036,
     "grey": #444,
     "grey-1": #666,
     "grey-2": #797979,
     "grey-3": #cdcdcd,
     "grey-4": #888,
+    "grey-5": rgb(205, 205, 205),
     "white":  #fff,
     "none":  #00000000,
 );

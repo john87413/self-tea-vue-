@@ -1,5 +1,6 @@
 <template>
   <div class="feature-context p-6">
+    <!-- 介紹文字 -->
     <p class="text-grey-5 text-center">{{contextContent}}</p>
   </div>
 </template>
@@ -15,12 +16,9 @@ export default {
 
 <style lang="scss" scoped>
 .feature-context {
-  border-width: 1px 0px;
-  border-style: dashed dashed;
-  border-color: rgb(255, 255, 255) rgb(255, 255, 255);
-  border-image: initial;
-  border-right: 0px;
-  border-left: 0px;
+  border-width: 1px 0px; // border 上下 1px 左右 0px
+  border-style: dashed ; // border 虛線
+  border-color: rgb(255, 255, 255);
   opacity: 0;
   transition: all 0.8s ease 0s;
   p {

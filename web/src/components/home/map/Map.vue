@@ -1,9 +1,9 @@
 <template>
-  <div class="home-map">
-    <div class="map-container d-flex flex-column">
-      <map-title></map-title>
-      <map-intro></map-intro>
-      <map-button></map-button>
+  <div class="home-map d-flex ai-start jc-center">
+    <div class="map-container d-flex flex-column jc-center ai-center">
+      <map-title :mapTitleContent="mapContent.mapTitle"></map-title>
+      <map-intro :mapIntroContent="mapContent.mapIntro"></map-intro>
+      <map-button :mapButtonContent="mapContent.mapButton"></map-button>
     </div>
   </div>
 </template>
@@ -28,10 +28,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home-map{
-    height: 50rem;
-    .map-container{
-
+.home-map {
+  margin: 7.5rem auto 2rem auto;
+  height: 50rem;
+  background: url("../../../assets/images/home_map_bg.png") center bottom
+    no-repeat;
+  .map-container {
+    width: 37rem;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 640px) {
+  .home-map {
+    margin: 3rem auto;
+    background-size: cover;
+    height: auto;
+    .map-container {
+      width: 100%;
     }
+  }
 }
 </style>

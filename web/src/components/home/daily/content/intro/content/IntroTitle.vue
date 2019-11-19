@@ -1,9 +1,13 @@
 <template>
   <div class="intro-title pt-11">
+    <!-- title 容器 -->
     <div class="title-container d-flex flex-column pt-4">
+      <!-- 英文title -->
       <p class="title-en text-primary fs-md fw-bold" v-html="introTitleContent.english"></p>
+      <!-- 小 title -->
       <p class="pt-5 fs-xl text-grey">{{introTitleContent.small}}</p>
-      <p class="pt-4 pl-3 fs-xxxxl text-black-1">{{introTitleContent.big}}</p>
+      <!-- 大 title -->
+      <p class="pt-4 pl-2 fs-xxxxl text-black-1">{{introTitleContent.big}}</p>
     </div>
   </div>
 </template>
@@ -27,6 +31,7 @@ export default {
       line-height: 1.3333rem;
       letter-spacing: 0.1em;
     }
+    // 髒污裝飾
     &::after {
       content: "";
       z-index: -1;

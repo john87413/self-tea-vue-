@@ -203,7 +203,21 @@ export default {
           imgUrl: daily_sign
         }
       },
-      mapContent: {}
+      mapContent: {
+        mapTitle: {
+          english: "Creativity<br>Revolution of Tea",
+          small: "引領世界茶飲風潮",
+          big: "久等了<br>與世界分享"
+        },
+        mapIntro: {
+          content:
+            "茶湯會將迎向全球市場，跨足海外。於2016年香港插旗展店，獲得各方好評，2017年前進上海，踏入華東地區，2018年拓展到新加坡、越南和北加州地區，未來將逐步擴展至東南亞、東北亞市場，讓茶湯會飲品深入世界的每一個角落。"
+        },
+        mapButton: {
+          search: "尋找門市",
+          join: "加入我們"
+        }
+      }
     };
   },
   components: {

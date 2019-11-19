@@ -1,5 +1,6 @@
 <template>
   <div class="feature-img">
+    <!-- 限制寬度100%直接可以區分為三區塊 高度自適應 -->
     <img class="w-100" :src="imgLink" />
   </div>
 </template>
@@ -15,9 +16,8 @@ export default {
 
 <style lang="scss" scoped>
 .feature-img {
-  // 加這個才不會有一點點突出來
   img {
-    display: block;
+    display: block; // 加這個才不會有一點點突出來
   }
 }
 @media all and (max-width: 700px) {
@@ -26,7 +26,7 @@ export default {
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: cover; //可以讓整個圖片比較好看
     }
   }
 }

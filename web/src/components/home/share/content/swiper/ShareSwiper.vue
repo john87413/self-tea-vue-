@@ -60,10 +60,10 @@ export default {
 // swiper 外容器 寬度100% 先設為消失
 .share-swiper {
   display: none;
-  width: 100%;
+  width: 100%; // 可以不用
   // swiper 內容器
   .share-swiper-content {
-    width: 90%;
+    width: 90%; // 可以不用
     padding: 0 0 2rem 0;
     // swiper item 容器
     .share-swiper-item {

@@ -46,7 +46,6 @@ export default {
     padding: 3.5rem 0;
     .share-container {
       width: 100%;
-      margin: auto;
     }
   }
 }

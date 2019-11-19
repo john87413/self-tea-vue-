@@ -48,4 +48,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// 用來隱藏DailyImg.vue的陰影
+.main{
+  overflow-x: hidden;
+}
 </style>

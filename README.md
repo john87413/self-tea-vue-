@@ -296,6 +296,51 @@ web:前端網頁設計 (Vue create web)
     手機端height: auto 失效(不知為啥) 可以改%數
 ```
 
+### 7.製作home的 feature
+```
+  1.FeatureItem.vue
+    三個方塊 內部img 設100%就可以等大
+  2.FeatureIntro.vue
+    如要有遮罩感可以用absolute 直接滿版
+  3.FeatureIntro.vue
+    標題下降效果 && 內文漸變
+  4.FeatureContext.vue
+    border 用法
+  5.FeatureButton.vue
+    偽元素不會被style.scss 的 * 影響
+    需自行加入 box-sizing: border-box
+  6.FeatureSwiper.vue
+    要更改"底部點點"就不能設style scoped
+  7.FeatureSwiper.vue
+    無限循環swiper
+    swiperOption: loop
+  8.FeatureSwiper.vue
+    動態更改 slidesPerView
+    observer: true,  observeParents: true , swiper.params.slidesPerView
+  9.FeatureSwiper.vue
+    外圍容器要d-flex 就要設置大小
+             flex-column 可以不用
+             沒有d-flex 也可以不用
+    
+```
+
+### 8.製作home的 daily
+```
+  1.Daily.vue + IntroInfo.vue
+    如果裡面物件要隨寬度大小變換 外容器就要設%數
+  2.Main.vue + DailyImg.vue
+    可以用overflow-x:hidden 來隱藏 shadow(DailyImg.vue)
+  3.IntroButton.vue
+    偽元素不受 style.scss影響 記得加box-sizing: border-box;
+    
+```
+
+### 9.製作home的 map
+```
+  1.
+    
+```
+
 ## END
 ---
 ## router小重點

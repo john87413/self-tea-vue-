@@ -26,12 +26,13 @@ export default {
     &::before {
       content: "";
       position: absolute;
-      left: 4px;
       top: 3px;
-      width: calc(100% - 10px);
-      height: calc(100% - 8px);
+      left: 4px;
+      width: calc(100% - 8px);
+      height: calc(100% - 6px);
       border: 1px solid rgba(13, 4, 9, 0.2);
       border-color: rgba(255, 255, 255, 0.2);
+      box-sizing: border-box; // 偽元素不被style.scss 的 * 影響
     }
     // 按鈕hover會變黑色
     // z-index設置-1才不會擋住 文字

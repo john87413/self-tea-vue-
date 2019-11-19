@@ -1,16 +1,19 @@
 <template>
   <div class="feature">
+    <!-- 外圍容器 -->
     <div class="feature-container d-flex">
-        <feature-item :featureItemContent="featureContent"></feature-item>
-        <feature-swiper :featureSwiperContent="featureContent"></feature-swiper>
+      <!-- 三個 不可滑動布局 -->
+      <feature-item :featureItemContent="featureContent"></feature-item>
+      <!-- 三個 可滑動布局 -->
+      <feature-swiper :featureSwiperContent="featureContent"></feature-swiper>
     </div>
   </div>
 </template>
 
 <script>
 // components
-import FeatureItem from './content/FeatureItem/FeatureItem'
-import FeatureSwiper from './content/FeatureSwiper/FeatureSwiper'
+import FeatureItem from "./content/FeatureItem/FeatureItem";
+import FeatureSwiper from "./content/FeatureSwiper/FeatureSwiper";
 
 export default {
   props: ["featureContent"],
@@ -18,18 +21,11 @@ export default {
     return {};
   },
   components: {
-      "feature-item": FeatureItem,
-      "feature-swiper": FeatureSwiper,
+    "feature-item": FeatureItem,
+    "feature-swiper": FeatureSwiper
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.feature {
-  .feature-container {
-    .feature-item {
-        position: relative;
-    }
-  }
-}
 </style>

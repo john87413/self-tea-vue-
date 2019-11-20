@@ -1,9 +1,12 @@
 <template>
   <div class="map-button w-100 d-flex">
+    <!-- 按鈕容器 寬度百分百 裡面元素才可以用相對大小 -->
     <div class="button-container w-100 d-flex jc-between">
+      <!-- 尋找按鈕 -->
       <a
         class="button-search d-flex jc-center ai-center fs-lgs text-white"
       >{{mapButtonContent.search}}</a>
+      <!-- 加入按鈕 -->
       <a class="button-join d-flex jc-center ai-center fs-lgs text-grey-1">{{mapButtonContent.join}}</a>
     </div>
   </div>
@@ -22,13 +25,16 @@ export default {
 <style lang="scss" scoped>
 @import "../../../../assets/scss/_variable";
 .map-button {
+  // 按鈕容器
   .button-container {
+    // 尋找按鈕
     .button-search {
       position: relative;
       width: calc(50% - 10px);
       height: 4rem;
       background: map-get($colors, "red");
       z-index: 0;
+      // 黑色背景
       &::before {
         content: "";
         position: absolute;
@@ -39,6 +45,7 @@ export default {
         transition: all 0.4s ease;
         z-index: -1;
       }
+      // 白色框框
       &::after {
         content: "";
         position: absolute;
@@ -46,8 +53,7 @@ export default {
         left: 4px;
         width: calc(100% - 8px);
         height: calc(100% - 6px);
-        border: 1px solid rgba(13, 4, 9, 0.2);
-        border-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         box-sizing: border-box;
       }
       &:hover {
@@ -56,6 +62,7 @@ export default {
         }
       }
     }
+    // 加入按鈕
     .button-join {
       position: relative;
       width: calc(50% - 10px);
@@ -64,6 +71,7 @@ export default {
       border: 1px solid rgba(13, 4, 9, 0.5);
       z-index: 0;
       transition: all 0.4s ease;
+      // 黑色背景
       &::before {
         content: "";
         position: absolute;
@@ -74,6 +82,7 @@ export default {
         transition: all 0.4s ease;
         z-index: -1;
       }
+      // 內部白色框
       &::after {
         content: "";
         position: absolute;

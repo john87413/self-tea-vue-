@@ -2,7 +2,7 @@
   <div class="main">
     <main-header :menuContent="menuContent"></main-header>
     <router-view class="main-view"></router-view>
-    <main-footer></main-footer>
+    <main-footer :footerContent="footerContent"></main-footer>
   </div>
 </template>
 
@@ -10,6 +10,9 @@
 // components
 import mainHeader from "../components/header/main/MainHeader";
 import mainFooter from "../components/footer/main/MainFooter";
+
+// images
+import logo from "../assets/images/menu_logo.png";
 
 export default {
   data() {
@@ -37,6 +40,31 @@ export default {
           { title: "加盟專區", link: "/main/join" },
           { title: "菁英招募", link: "/main/careers" }
         ]
+      },
+      // footer 的資料
+      footerContent: {
+        logoImgContent: {
+          imgLink: logo
+        },
+        contactInfoContent: {
+          contactList: [
+            { title: "電話", info: "886-4-2389-6909" },
+            { title: "傳真", info: "886-4-23894277" },
+            { title: "加盟專線", info: "0800-800533" },
+            { title: "地址", info: "台中市南屯區龍富路三段565號2樓之1" },
+            { title: "聯絡我們", info: "" }
+          ]
+        },
+        contactButtonContent: {
+          contactList: [
+            { icon: "line" },
+            { icon: "ios-morse-facebook" },
+            { icon: "IG" }
+          ]
+        },
+        copyRightContent: {
+          content: "TP TEA 2017 © Copyright All Rights Reserved. 網頁設計‧iBest"
+        }
       }
     };
   },
@@ -49,7 +77,7 @@ export default {
 
 <style lang="scss" scoped>
 // 用來隱藏DailyImg.vue的陰影
-.main{
+.main {
   overflow-x: hidden;
 }
 </style>

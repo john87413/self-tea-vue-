@@ -62,6 +62,13 @@
       "unicode_decimal": 61926
     },
     {
+      "icon_id": "6955655",
+      "name": "e-mail",
+      "font_class": "email-1",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
       "icon_id": "8335311",
       "name": "mail, envelope, letter, email, newsletter",
       "font_class": "mailenvelopeletteremailnewsletter",

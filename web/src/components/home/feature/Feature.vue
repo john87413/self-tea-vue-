@@ -1,5 +1,5 @@
 <template>
-  <div class="feature">
+  <div class="home-feature">
     <!-- 外圍容器 -->
     <div class="feature-container d-flex">
       <!-- 三個 不可滑動布局 -->

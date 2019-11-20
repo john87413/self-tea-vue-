@@ -1,5 +1,7 @@
 <template>
+  <!-- 介紹容器 -->
   <div class="map-intro px-7 pb-5 mb-11">
+    <!-- 介紹文字 -->
     <p class="intro-content">{{mapIntroContent.content}}</p>
   </div>
 </template>
@@ -16,6 +18,7 @@ export default {
 
 <style lang="scss" scoped>
 .map-intro {
+  // 內容
   .intro-content {
     font-family: Helvetica, Arial, sans-serif, "微軟正黑體", Heiti TC,
       "メイリオ";

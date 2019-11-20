@@ -337,8 +337,14 @@ web:前端網頁設計 (Vue create web)
 
 ### 9.製作home的 map
 ```
-  1.
-    
+  1.MapTitle.vue
+    垂直效果: writing-mode: vertical-rl;
+```
+
+### 10.製作home的 footer
+```
+  1.ContactInfo.vue
+    強迫不換行:white-space: nowrap
 ```
 
 ## END

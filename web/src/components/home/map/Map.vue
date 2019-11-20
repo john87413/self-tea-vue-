@@ -1,9 +1,17 @@
 <template>
-  <div class="home-map d-flex ai-start jc-center">
+<!-- 地圖背景 -->
+  <div class="home-map">
+    <!-- 世界地圖 -->
     <div class="map-container d-flex flex-column jc-center ai-center">
-      <map-title :mapTitleContent="mapContent.mapTitle"></map-title>
-      <map-intro :mapIntroContent="mapContent.mapIntro"></map-intro>
-      <map-button :mapButtonContent="mapContent.mapButton"></map-button>
+      <!-- 內容容器 -->
+      <div class="map-content d-flex flex-column ai-center">
+        <!-- 標題區 -->
+        <map-title :mapTitleContent="mapContent.mapTitle"></map-title>
+        <!-- 介紹區 -->
+        <map-intro :mapIntroContent="mapContent.mapIntro"></map-intro>
+        <!-- 按鈕區 -->
+        <map-button :mapButtonContent="mapContent.mapButton"></map-button>
+      </div>
     </div>
   </div>
 </template>
@@ -28,23 +36,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// 背景區
 .home-map {
-  margin: 7.5rem auto 2rem auto;
-  height: 50rem;
-  background: url("../../../assets/images/home_map_bg.png") center bottom
-    no-repeat;
+  padding: 7.5rem 0 5rem 0;
+  background: url("../../../assets/images/map-bg.jpg") repeat;
+  // 世界地圖
   .map-container {
-    width: 37rem;
-    margin: 0 auto;
+    height: 50rem;
+    background: url("../../../assets/images/home_map_bg.png") center bottom
+      no-repeat;
+    // 內容容器
+    .map-content {
+      width: 37rem;
+      margin: 0 auto;
+    }
   }
 }
 @media all and (max-width: 640px) {
   .home-map {
-    margin: 3rem auto;
-    background-size: cover;
-    height: auto;
+    padding: 3rem 0 5rem 0;
     .map-container {
-      width: 100%;
+      background-size: cover;
+      height: auto;
+      .map-content {
+        width: 100%;
+      }
     }
   }
 }

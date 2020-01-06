@@ -59,6 +59,8 @@ web:前端網頁設計 (Vue create web)
   前置作業:
   1. npm install -g @vue/cli (已安裝過就不用)
   2. Vue create web
+  3. cd web
+  4. npm run serve
 ```
 
 ### 2.gitignore
